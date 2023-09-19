@@ -1,0 +1,8 @@
+mixed-port: 7890
+allow-lan: true
+bind-address: '*'
+mode: rule
+log-level: info
+external-controller: '127.0.0.1:9090'
+proxies:
+    - { name: SS, type: ss, server: 74.249.35.145, port: 80, cipher: chacha20-ietf-poly1305, password: liu, udp: true }
